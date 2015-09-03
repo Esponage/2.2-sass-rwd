@@ -1,0 +1,324 @@
+/*
+===============================================
+Facebook background blue: RGBA(68, 88, 151, 1);
+inside of Facebook: RGBA(127, 141, 186, 1);
+RSS background yellow: RGBA(204, 144, 50, 1);
+Top button color: RGBA(179, 41, 46, 1);
+===============================================
+*/
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  background-image: url("../assets/images/bg.jpg");
+  background-size: cover;
+  z-index: -1; }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: RGBA(0, 0, 0, 0.6);
+  z-index: -2; }
+
+img {
+  max-width: 100%; }
+
+li {
+  list-style: none; }
+
+.main-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans", sans-serif; }
+  .main-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/*
+===============================================
+ TOP SOCIAL MEDIA BAR OF SITE
+===============================================
+*/
+.social-media-bar {
+  height: 5.375em; }
+
+.subscribe a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: RGBA(245, 241, 238, 1); }
+
+.dot {
+  color: white;
+  font-size: 45px; }
+
+/*
+===============================================
+ NAV BAR AT TOP OF SITE WITH 4 BUTTONS
+===============================================
+*/
+.topnav li {
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 2.8125em; }
+  .topnav li:last-child {
+    margin-right: 0; }
+
+.button1,
+.button2,
+.button3,
+.button4 {
+  background-color: RGBA(179, 41, 46, 1);
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  height: 2.8125em; }
+
+.button4 {
+  margin-right: 0; }
+
+/*
+===============================================
+ MAIN PICTURE AND LOGO HEADER
+===============================================
+*/
+header {
+  height: 22.3125em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  clear: both; }
+  header:last-child {
+    margin-right: 0; }
+
+.mainphoto {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 22.3125em;
+  background-image: url("../assets/images/top-image.png");
+  background-position: 27% 28%;
+  z-index: -2; }
+  .mainphoto:last-child {
+    margin-right: 0; }
+
+.mainphoto::after {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../assets/images/peralta-logo.png");
+  top: 13.4375em;
+  right: 0;
+  bottom: 0;
+  left: 17.6875em;
+  z-index: 1;
+  content: "";
+  background-repeat: no-repeat; }
+  .mainphoto::after:last-child {
+    margin-right: 0; }
+
+/*
+===============================================
+ 3 DOTS ABOVE PARAGRAPH
+===============================================
+*/
+.threedots {
+  position: relative;
+  left: 30.4375em;
+  top: 2.5em; }
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 1em;
+  height: 1em;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #ffffff, #fff);
+  background-color: RGBA(254, 254, 254, 1);
+  display: inline-block; }
+
+/*
+===============================================
+3 PARAGRAPHS IN MIDDLE OF SITE
+===============================================
+*/
+.article1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: RGBA(251, 251, 251, 1);
+  height: 22.125em;
+  margin-top: 4.0625em;
+  text-align: left; }
+  .article1:last-child {
+    margin-right: 0; }
+
+.article2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: RGBA(251, 251, 251, 1);
+  height: 22.125em;
+  margin-top: 4.0625em;
+  text-align: left; }
+  .article2:last-child {
+    margin-right: 0; }
+
+.article3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: RGBA(251, 251, 251, 1);
+  height: 22.125em;
+  margin-top: 4.0625em;
+  text-align: left; }
+  .article3:last-child {
+    margin-right: 0; }
+
+.paragraph {
+  font-size: 0.5625em;
+  color: RGBA(112, 112, 112, 1); }
+
+.time {
+  color: RGBA(167, 167, 167, 1); }
+
+.read-more {
+  color: RGBA(179, 41, 46, 1);
+  padding-left: 101px; }
+
+/*
+===============================================
+ SKATER IMAGES
+===============================================
+*/
+.skater-pics {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 2.3125em; }
+  .skater-pics:last-child {
+    margin-right: 0; }
+
+.lance-mountain {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../assets/images/sk8er-4.png");
+  height: 14.75em;
+  background-position: right;
+  border: 4px solid white;
+  background-repeat: no-repeat; }
+  .lance-mountain:last-child {
+    margin-right: 0; }
+
+.rodney-mullen {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../assets/images/sk8er-3.png");
+  height: 14.75em;
+  border: 4px solid white;
+  background-repeat: no-repeat; }
+  .rodney-mullen:last-child {
+    margin-right: 0; }
+
+.tommy-guerrero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-image: url("../assets/images/sk8er-2.png");
+  margin-right: 0;
+  height: 29.875em;
+  background-position: 79%;
+  border: 4px solid white;
+  float: right;
+  margin-bottom: 1.6875em;
+  background-repeat: no-repeat; }
+  .tommy-guerrero:last-child {
+    margin-right: 0; }
+
+.steve-caballero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  background-image: url("../assets/images/sk8er-1.png");
+  height: 14.75em;
+  border: 4px solid white;
+  margin-top: 0.375em;
+  margin-bottom: 1.6875em;
+  background-position: 23% 48%;
+  background-repeat: no-repeat; }
+  .steve-caballero:last-child {
+    margin-right: 0; }
+
+/*
+===============================================
+ SKATEBOARDS
+===============================================
+*/
+.skateboards {
+  display: inline-block;
+  background-color: RGBA(253, 253, 253, 1);
+  width: 100%; }
+
+.skateboard-list {
+  display: inline-block;
+  list-style: none;
+  padding-right: 1.66875em; }
+
+.boards {
+  height: 18.6875em;
+  background-color: RGBA(253, 253, 253, 1); }
+
+/*
+===============================================
+ CONTACT US FOOTER
+===============================================
+*/
+.contact-us {
+  height: 22.8125em;
+  background-color: RGBA(253, 253, 253, 1);
+  margin-top: 1.9375em; }
+
+.more-information {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .more-information:last-child {
+    margin-right: 0; }
+
+.action-form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 18.4375em;
+  padding-left: 2.375em;
+  margin-top: 2.0625em; }
+  .action-form:last-child {
+    margin-right: 0; }
